@@ -49,7 +49,7 @@ module Groupdate
             # only need to show what database returned since it will cast in Ruby time zone
             # raise Groupdate::Error, "Database and Ruby have inconsistent time zone info. Database returned #{key}"
           end
-        # end
+        end
       end
 
       unless entire_series?(series_default)
