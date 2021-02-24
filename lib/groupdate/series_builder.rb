@@ -45,11 +45,11 @@ module Groupdate
               k = key
             end
             verified_data[k] = v
-          elsif key != round_time(key)
+          # elsif key != round_time(key)
             # only need to show what database returned since it will cast in Ruby time zone
             # raise Groupdate::Error, "Database and Ruby have inconsistent time zone info. Database returned #{key}"
           end
-        end
+        # end
       end
 
       unless entire_series?(series_default)
